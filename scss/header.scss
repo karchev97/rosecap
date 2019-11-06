@@ -1,0 +1,121 @@
+.full-width-block{
+	width: 100%;
+	box-sizing: border-box;
+}
+.full-width-block--contact{
+	border-bottom: 1px solid $colorGrey;
+}
+
+@mixin liDisplay {
+	li{
+		display: inline-block;
+	}
+}
+
+@mixin w960 {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.contact-block{
+	@include w960();
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	&__data{
+		display: flex;
+		flex-basis: 50%;
+		flex-direction: row;
+		padding-left: 0;
+
+		@include liDisplay();
+
+		& > li{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		& span{
+			color: $mainColor;
+		}
+
+		& a{
+			@include defaultLink($mainDarkColor, 14px, $mainColor, $mainColor);
+			padding:0 15px 0 5px;
+		}
+		
+	}
+
+	&__soc-items{
+		display: flex;
+		flex-basis: 50%;
+		flex-direction: row;
+		justify-content: flex-end;
+		padding-left: 0;
+
+		@include liDisplay();
+
+	}
+
+	&__soc-item{
+		margin-left: 10px;
+		margin-top: 3px;
+		
+		& a{
+			@include defaultLink($mainDarkColor, 16px, $mainColor, $mainColor);
+		}
+	}
+}
+
+.main-nav{
+	@include w960();
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 28px 0;
+	
+	.nav-items{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		&__logo{
+			max-width: 118px;
+		}
+
+		&__ul-items{
+			display: flex;
+			flex-direction: row;
+
+			@include liDisplay();
+		}
+
+		&__ul-item{
+			padding-right: 35px;
+
+			& a{
+				@include defaultLink($mainDarkColor, 16px, $mainColor, $mainColor);
+			}
+		}
+	}
+
+	.shop-nav{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		@include liDisplay();
+
+		&__item{
+			padding-left: 25px;
+
+			& a{
+				@include defaultLink($mainDarkColor, 16px, $mainColor, $mainColor);
+			}
+		}
+	}
+}

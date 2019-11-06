@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/main.css">
+	<title>Заголовок</title>
+</head>
+<body>
+	<header class="header-class">
+    <div class="full-width-block full-width-block--contact">
+      <div class="contact-block">
+        <ul class="contact-block__data">
+          <li><span class="ti-email"></span> <a href="mailto:info@test.ru">info@test.ru</a></li>
+          <li><span class="ti-headphone-alt"></span> <a href="tel:+7 (800) 555-35-35">8 (800) 555-35-35</a></li>
+        </ul>
+        <ul class="contact-block__soc-items">
+          <li class="contact-block__soc-item"><a href="#"><span class="ti-twitter-alt"></span></a></li>
+          <li class="contact-block__soc-item"><a href="#"><span class="ti-facebook"></a></span></li>
+          <li class="contact-block__soc-item"><a href="#"><span class="ti-google"></a></span></li>
+          <li class="contact-block__soc-item"><a href="#"><span class="ti-instagram"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="full-width-block">
+      <nav class="main-nav">
+        <div class="nav-items">
+          <a class="nav-items__logo" href="#"><img src="img/logo.png" alt="Логотип"></a>
+          <ul class="nav-items__ul-items">
+            <li class="nav-items__ul-item"><a href="#">Главная</a></li>
+            <li class="nav-items__ul-item"><a href="#">Продукция</a></li>
+            <li class="nav-items__ul-item"><a href="#">О нас</a></li>
+            <li class="nav-items__ul-item"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+
+        <ul class="shop-nav">
+          <li class="shop-nav__item"><a href="#"><span class="ti-search"></a></li>
+          <li class="shop-nav__item"><a href="#"><span class="ti-shopping-cart"></a></span></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Слайдер -->
+    <article class="main-slider">
+      <nav class="main-slider__nav-items">
+        <ul class="main-slider__nav-item"></ul>
+        <ul class="main-slider__nav-item"></ul>
+      </nav>
+      <section class="main-slider-content">
+        <h1 class="main-slider-content__title">Заголовок</h1>
+        <strong class="main-slider-content__strong-text">Какой-то дополнительный текст</strong>
+        <div class="main-slider-content__default-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <ul class="main-slider-content__price-items">
+          <li class="main-slider-content__price-item">Цена: 10.000 руб</li>
+          <li class="main-slider-content__price-item">Добавить в корзину</li>
+        </ul>
+      </section>
+    </article>
+
+    <article>
+      <div class="titles-block">
+        <h2 class="titles-block__item-h2">Популярные товары</h2>
+        <h4 class="titles-block__item-h4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, laborum!</h4>
+      </div>
+
+      <!-- Блок со слайдером -->
+      <div class="products">
+        <div class="pop-products">
+          <article class="pop-products-item">
+            <img class="pop-products-item__img" src="" alt="">
+            <h3 class="pop-products-item__h3">Название товара</h3>
+            <h4 class="pop-products-item__h4">Стоимость</h4>
+          </article>
+          <article class="pop-products-item">
+              <img class="pop-products-item__img" src="" alt="">
+              <h3 class="pop-products-item__h3">Название товара</h3>
+              <h4 class="pop-products-item__h4">Стоимость</h4>
+
+            <div class="pop-products-item-choose">
+              <div class="pop-products-item-choose__size">Размеры: xl, l, m</div>
+              <!-- Выбор цвета одежды -->
+              <ul class="pop-products-item-choose__color-items">
+                <li class="pop-products-item-choose__color-item">Red</li>
+                <li class="pop-products-item-choose__color-item">Blue</li>
+                <li class="pop-products-item-choose__color-item">Black</li>
+              </ul>
+
+              <ul class="pop-products-item-choose__action-items">
+                <li class="pop-products-item-choose__action-item">Добавить в корзину</li>
+                <li class="pop-products-item-choose__action-item">Понравившиеся</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <!-- Навигация по слайдеру -->
+        <ul class="pop-products-nav">
+          <li class="pop-products-nav__item">.</li>
+          <li class="pop-products-nav__item">.</li>
+          <li class="pop-products-nav__item">.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article>
+        <div class="titles-block">
+          <h2 class="titles-block__item-h2">Популярные товары</h2>
+          <h4 class="titles-block__item-h4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, laborum!</h4>
+        </div>
+      <!-- Блок с товарами -->
+      <div class="products-populat">
+        <article class="products-populat-item">
+          <img class="products-populat-item__img" src="" alt="">
+          <div class="products-populat-item__content">
+            <h3 class="products-populat-item__h3">Название товара</h3>
+            <!-- рейтинг -->
+            <h4 class="products-populat-item__h4">Стоимость</h4>
+          </div>
+        </article>          
+      </div>
+    </article>
+
+    <article class="contact-place">
+      <div class="contact-place__title">Написать письмо</div>
+      <form class="contact-place__form" action="">
+        <input class="contact-place__input" type="text">
+        <button class="contact-place__submit" type="button">Отправить</button>
+      </form>
+    </article>
+  </main>
+
+  <footer class="main-footer">
+    <img class="main-footer__logo" src="" alt="">
+    <div class="main-footer__text">Текст о копирайте 2019г</div>
+  </footer>
+</body>
+</html>

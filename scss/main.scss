@@ -1,0 +1,25 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+$mainColor:#ff5912;
+$mainDarkColor: #34404b;
+$colorGrey: #edeff1;
+
+@mixin defaultLink($color: $mainColor, $fSize: 14px, $hover: blue, $active: green) {
+    color: $color;
+    font-size: $fSize;
+    text-decoration: none;
+
+    &:hover{
+        color: $hover;
+    }
+
+    &:active{
+        color: $active;
+    }
+    
+}
+
+@import "header";
