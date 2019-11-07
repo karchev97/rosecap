@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,500i,600,600i,700,700i&display=swap");
 body {
   padding: 0;
   margin: 0; }
@@ -5,10 +6,24 @@ body {
 .full-width-block {
   width: 100%;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: mainDarkColor;
+  font-weight: 400;
+  font-style: normal; }
 
 .full-width-block--contact {
   border-bottom: 1px solid #edeff1; }
+
+.menu-icon {
+  display: none;
+  color: #34404b;
+  font-size: 16px;
+  text-decoration: none; }
+  .menu-icon:hover {
+    color: #ff5912; }
+  .menu-icon:active {
+    color: #ff5912; }
 
 .contact-block {
   width: 960px;
@@ -162,3 +177,178 @@ body {
           color: #ff5912; }
         .main-nav .shop-nav__item a:active {
           color: #ff5912; }
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .contact-block {
+    width: 90%;
+    margin: 0 5%; }
+  .main-nav {
+    width: 90%;
+    margin: 0 5%; } }
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .menu-icon {
+    display: block; }
+  .contact-block {
+    width: 90%;
+    margin: 0 5%; }
+    .contact-block__data {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .contact-block__data > li {
+        -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+        justify-content: stretch; }
+      .contact-block__data a {
+        padding: 0 0 0 5px; }
+  .main-nav {
+    width: 90%;
+    margin: 0 5%;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-bottom: 18px; }
+    .main-nav .nav-items {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .main-nav .nav-items__ul-items {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        padding-left: 0;
+        display: none; }
+      .main-nav .nav-items__ul-item {
+        padding-bottom: 10px; }
+    .main-nav .shop-nav {
+      margin-top: 0; } }
+
+.slider {
+  background-color: #f5f5f6;
+  background-image: url(../img/slider.jpg);
+  background-size: cover;
+  padding: 120px 0; }
+
+.main-slider {
+  width: 960px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .main-slider__nav-item {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 30px; }
+    .main-slider__nav-item > li {
+      display: block;
+      width: 10px;
+      height: 15px;
+      background: #fff;
+      margin-bottom: 10px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      .main-slider__nav-item > li.active {
+        width: 10px;
+        height: 30px;
+        background: #ff5912; }
+      .main-slider__nav-item > li:hover {
+        cursor: pointer; }
+
+.main-slider-content__title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #ff5912;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 15px; }
+
+.main-slider-content__strong-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #34404b;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px; }
+
+.main-slider-content__default-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #34404b;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  padding-top: 10px; }
+
+.main-slider-content__price-items {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #34404b;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-left: 0;
+  margin-top: 40px; }
+  .main-slider-content__price-items > li {
+    display: inline-block;
+    padding-right: 22px; }
+    .main-slider-content__price-items > li:nth-child(2) a {
+      color: #34404b;
+      font-size: 15px;
+      text-decoration: none;
+      color: #ff5912; }
+      .main-slider-content__price-items > li:nth-child(2) a:hover {
+        color: #ff5912; }
+      .main-slider-content__price-items > li:nth-child(2) a:active {
+        color: #ff5912; }
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .slider {
+    padding: 40px 0; } }
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  .main-slider {
+    width: 90%;
+    margin: 0 5%; } }
+
+.titles-block {
+  text-align: center;
+  padding: 70px 0; }
+  .titles-block__item-h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #ff5912;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+    .titles-block__item-h2 span {
+      color: #34404b; }
+  .titles-block__item-h4 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #34404b;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px; }
