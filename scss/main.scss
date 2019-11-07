@@ -8,8 +8,11 @@ body{
 $mainColor:#ff5912;
 $mainDarkColor: #34404b;
 $colorGrey: #edeff1;
+$defaultBack: #f4f6f8;
 
 @import "mixins";
 @import "header";
 @import "mainSlider";
-@import "popProducts"
+@import "popProducts";
+@import "message";
+@import "productCart";
